@@ -1,0 +1,36 @@
+.converter {
+  display: flex;
+  justify-content: center;
+
+  &__block{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__block-select {
+    padding: 19px;
+    border-radius: 10px;
+    background-color: transparent;
+  }
+
+  &__block-input {
+    width: 350px;
+    margin-right: 50px;
+  }
+}
+.mat-mdc-card {
+  width: 35vw;
+  height: 35vh;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+  margin-top: 50px;
+  background-color: #b6a5d2;
+  transition: all 0.2s linear;
+}
+.mat-mdc-card:hover {
+  background-color: #b49ce7;
+}
+.mat-mdc-card-content {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+}

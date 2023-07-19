@@ -1,0 +1,15 @@
+<header class="header">
+  <section class="header__inner">
+    <mat-toolbar class="header__toolbar">
+      <mat-toolbar-row class="header__toolbar-row">
+        <div class="mat-toolbar-row__logo">
+          <img [src]="headerImages.logo" alt="logo image" class="mat-toolbar-row__block-image">
+        </div>
+        <div class="mat-toolbar-row__exchange">
+          <p class="mat-toolbar-row__exchange-item"><b>1 USD</b> = {{ exchangeRate | number }}UAH</p>
+          <p class="mat-toolbar-row__exchange-item"><b>1 EUR</b> = {{ exchangeRateEur | number }}UAH</p>
+        </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </section>
+</header>

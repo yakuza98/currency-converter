@@ -1,0 +1,41 @@
+<div class="main">
+  <section class="converter">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Exchanger</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="converter__block">
+          <div class="converter__block-item">
+            <mat-form-field appearance="outline" class="converter__block-input">
+              <input type="number"
+                     matInput
+                     [value]="amount1"
+                     (input)="changeInput(1, $event)">
+            </mat-form-field>
+            <select class="converter__block-select"
+                    (change)="convertCurrency($event, 1)">
+              <option *ngFor="let currency of currencies"
+                      name="type"
+                      [value]="currency">
+                {{currency}}</option>
+            </select>
+          </div>
+          <div class="converter__block-item">
+            <mat-form-field appearance="outline" class="converter__block-input">
+              <input
+                type="number"
+                matInput
+                [value]="amount2"
+                (input)="changeInput(2, $event)">
+            </mat-form-field>
+            <select class="converter__block-select"
+                    (change)="convertCurrency($event, 2)">
+              <option *ngFor="let currency of currencies" name="type" [value]="currency">{{currency}}</option>
+            </select>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </section>
+</div>
